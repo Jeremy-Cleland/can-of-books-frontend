@@ -1,4 +1,13 @@
-.Header {
-  display: flex;
-  color: white;
+a {
+  color: #fff;
+}
+.nav-item {
+  color: #fff;
+}
+.nav-link {
+  color: #fff;
+  padding: 5px;
+}
+.navbar-brand {
+  color: #fff;
 }
