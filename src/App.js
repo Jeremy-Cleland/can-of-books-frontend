@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import Profile from "./About";
 import BestBooks from "./BestBooks";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -28,6 +29,7 @@ class App extends React.Component {
           </div>
           <Routes>
             <Route exact path='/' element={<BestBooks />}></Route>
+            <Route exact path='/about' element={<Profile />}></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer />
