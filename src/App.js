@@ -6,6 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { books: [] };
+  }
   render() {
     return (
       <>
