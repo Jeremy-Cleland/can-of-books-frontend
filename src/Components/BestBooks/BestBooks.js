@@ -25,6 +25,41 @@ class BestBooks extends React.Component {
     });
   };
 
+  handleNewBook = (event) => {
+    event.preventDefault();
+
+    let newBook = {
+      title: event.target.title.value,
+      description: event.target.description.value,
+      status: event.target.status.value,
+    };
+    this.handleCloseModal();
+    console.log("New Book Submitted from Book Form Modal", newBook);
+    this.postBooks(newBook);
+  };
+
+  postBooks = async (bookObj) => {
+    try {
+      let url = `${process.env.REACT_APP_SERVER}/books`;
+      let newBook = await axios.post(url, bookObj);
+      this.setState({
+        books: [...this.state.books, newBook.data],
+      });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  deleteBook = async (id) => {
+    let url = `${process.env.REACT_APP_SERVER}/books/${id}`;
+    await axios.delete(url);
+    let libraryUpdated = this.state.books.filter((book) => book._id !== id);
+    console.log(libraryUpdated, id);
+    this.setState({
+      books: libraryUpdated,
+    });
+  };
+
   componentDidMount = () => {
     this.getBooks();
   };
