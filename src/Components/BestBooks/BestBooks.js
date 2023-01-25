@@ -78,7 +78,7 @@ class BestBooks extends React.Component {
                   <Carousel.Item>
                     <img
                       className='d-block w-100'
-                      src={"https://via.placeholder.com/1200x800/045a04/"}
+                      src={"https://loremflickr.com/1280/800/nature"}
                       alt={book.title}
                     />
                     <Carousel.Caption>
