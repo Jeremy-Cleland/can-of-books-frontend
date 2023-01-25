@@ -1,10 +1,10 @@
-import "./App.css";
 import React from "react";
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import Profile from "../Components/About/About";
 import BestBooks from "../Components/BestBooks/BestBooks";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -17,6 +17,7 @@ class App extends React.Component {
       <>
         <Router>
           <Header />
+
           <div>
             {this.state.books.length > 0 &&
               this.state.books.map((book) => {
@@ -28,12 +29,14 @@ class App extends React.Component {
                 );
               })}
           </div>
+
           <Routes>
             <Route
               exact
               path='/'
               element={<BestBooks getBooks={this.getBooks} />}
             ></Route>
+
             <Route exact path='/about' element={<Profile />}></Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
