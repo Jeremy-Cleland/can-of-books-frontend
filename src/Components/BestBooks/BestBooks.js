@@ -11,11 +11,17 @@ class BestBooks extends React.Component {
       showForm: false,
     };
   }
-  handleCloseModal = () => this.setState({ showForm: false });
+  handleCloseModal = () =>
+    this.setState({
+      showForm: false,
+    });
+
   /* TODO: Make a GET request to your API to fetch all the books from the database  */
   getBooks = async () => {
     let bookData = await axios.get(`${process.env.REACT_APP_SERVER}/books`);
-    this.setState({ books: bookData.data });
+    this.setState({
+      books: bookData.data,
+    });
     console.log(bookData.data);
   };
 
@@ -111,7 +117,7 @@ class BestBooks extends React.Component {
             <BookFormModal
               handleNewBook={this.handleNewBook}
               showForm={this.state.showForm}
-              handleCloseModal={this.handleCloseModal}
+              closeModal={this.handleCloseModal}
             />
           </div>
         ) : (

@@ -6,13 +6,15 @@ class BookFormModal extends React.Component {
   render() {
     return (
       <Modal
-        className='modal'
+        className='Modal'
         style={{ textAlign: "center" }}
         show={this.props.handleShowModal}
         onHide={this.props.handleCloseModal}
       >
-        <Modal.Header closeButton>New Book</Modal.Header>.
-        <form>
+        <Modal.Header closeButton style={{ color: "black" }}>
+          New Book
+        </Modal.Header>
+        <form onSubmit={this.props.handleNewBook}>
           <label htmlFor='title'>Title</label>
           <input type='text' placeholder='Title' name='title' id='title' />
           <label htmlFor='description'>Description</label>
