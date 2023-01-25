@@ -109,6 +109,7 @@ class BestBooks extends React.Component {
               openModal={this.openModal}
               handleNewBook={this.handleNewBook}
               onHide={this.closeModal}
+              isOpen={this.state.isOpen}
             />
           </div>
         ) : (
