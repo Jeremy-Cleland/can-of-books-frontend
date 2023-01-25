@@ -1,8 +1,8 @@
 import React from "react";
-import "./BookFormModal.css";
+import "./AddBookForm.css";
 import { Modal, Button, Form } from "react-bootstrap";
 
-class BookFormModal extends React.Component {
+class AddBookForm extends React.Component {
   render() {
     return (
       <Modal
@@ -38,10 +38,10 @@ class BookFormModal extends React.Component {
             <Form.Group className='mb-3' controlId='status'>
               <Form.Label>Status</Form.Label>
               <Form.Control
-                type='text'
-                placeholder='Status'
+                type='checkbox'
                 name='status'
                 id='status'
+                defaultChecked={this.props.book.status}
               />
             </Form.Group>
             <Button variant='primary' type='submit'>
@@ -60,4 +60,4 @@ class BookFormModal extends React.Component {
   }
 }
 
-export default BookFormModal;
+export default AddBookForm;

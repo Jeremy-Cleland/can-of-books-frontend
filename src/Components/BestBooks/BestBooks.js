@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Carousel, Button } from "react-bootstrap";
-import BookFormModal from "../BookFormModal/BookFormModal";
+import AddBookForm from "../AddBookForm/AddBookForm";
 
 class BestBooks extends React.Component {
   constructor(props) {
@@ -93,6 +93,14 @@ class BestBooks extends React.Component {
                       >
                         Delete
                       </Button>
+                      <Button
+                        onClick={() => {
+                          this.deleteBook(book._id);
+                        }}
+                        variant='danger'
+                      >
+                        Delete
+                      </Button>
                     </Carousel.Caption>
                   </Carousel.Item>
                 );
@@ -105,7 +113,7 @@ class BestBooks extends React.Component {
             >
               Add New Book
             </Button>
-            <BookFormModal
+            <AddBookForm
               openModal={this.openModal}
               handleNewBook={this.handleNewBook}
               onHide={this.closeModal}
