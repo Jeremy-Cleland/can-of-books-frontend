@@ -8,13 +8,9 @@ class BestBooks extends React.Component {
     super(props);
     this.state = {
       books: [],
-      showForm: false,
+      isOpen: false,
     };
   }
-  handleCloseModal = () =>
-    this.setState({
-      showForm: false,
-    });
 
   /* TODO: Make a GET request to your API to fetch all the books from the database  */
   getBooks = async () => {
@@ -23,12 +19,6 @@ class BestBooks extends React.Component {
       books: bookData.data,
     });
     console.log(bookData.data);
-  };
-
-  handleShowModal = () => {
-    this.setState({
-      showForm: true,
-    });
   };
 
   handleNewBook = (event) => {
@@ -66,6 +56,9 @@ class BestBooks extends React.Component {
     });
   };
 
+  openModal = () => this.setState({ isOpen: true });
+  closeModal = () => this.setState({ isOpen: false });
+
   componentDidMount = () => {
     this.getBooks();
   };
@@ -85,9 +78,7 @@ class BestBooks extends React.Component {
                   <Carousel.Item>
                     <img
                       className='d-block w-100'
-                      src={
-                        "https://via.placeholder.com/1200x800/045a04/F6f6f6/"
-                      }
+                      src={"https://via.placeholder.com/1200x800/045a04/"}
                       alt={book.title}
                     />
                     <Carousel.Caption>
@@ -108,20 +99,20 @@ class BestBooks extends React.Component {
               })}
             </Carousel>
             <Button
-              onClick={this.handleShowModal}
+              onClick={this.openModal}
               className='my-4'
               variant='outline-info'
             >
               Add New Book
             </Button>
             <BookFormModal
+              openModal={this.openModal}
               handleNewBook={this.handleNewBook}
-              showForm={this.state.showForm}
-              closeModal={this.handleCloseModal}
+              onHide={this.closeModal}
             />
           </div>
         ) : (
-          <h3>No Books Found :(</h3>
+          <h3>No Books Found</h3>
         )}
       </>
     );

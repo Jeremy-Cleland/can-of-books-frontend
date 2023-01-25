@@ -8,8 +8,8 @@ class BookFormModal extends React.Component {
       <Modal
         className='Modal'
         style={{ textAlign: "center" }}
-        show={this.props.handleShowModal}
-        onHide={this.props.handleCloseModal}
+        show={this.props.isOpen}
+        onHide={this.props.onHide}
       >
         <Modal.Header closeButton style={{ color: "black" }}>
           New Book
@@ -26,7 +26,7 @@ class BookFormModal extends React.Component {
           />
           <label htmlFor='status'>Status</label>
           <input type='text' placeholder='Status' name='status' id='status' />
-          <Button type='submit'>Add new</Button>
+          <Button onClick={this.props.closeModal}>Add new</Button>
         </form>
       </Modal>
     );
