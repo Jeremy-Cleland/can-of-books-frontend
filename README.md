@@ -1,50 +1,15 @@
-# [Can of Books](https://books-in-a-can.netlify.app)
-
-**Author**: Jeremy Cleland & Marcus Bynoe
-**Version**: 1.0.0
-
-## Overview
-
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
-
-## Getting Started
-
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
-
-## Architecture
-
-- JavaScript
-- MongoDB Atlas
-- Render
-- React
-- Express
-- Axios
-- Netflify
-
-## Change Log
-
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-
-## Estimates
-
-> Name of feature: Set-up, Storage, & Components
->
-> - Estimate of time needed to complete: 3 hours
-> - Start time: 5:00 EST
-> - Finish time: 2000 EST
-> - Actual time needed to complete: 3 hours
->
-> ---
-
 # Start your own "Can of Books" App
 
-This repository has starter code to begin work on creating your own online bookshelf.
+## [Can of Books](https://books-in-a-can.netlify.app)
+
+## Repos
+
+[can-of-books-frontend](https://github.com/Jeremy-Cleland/can-of-books-frontend)
+[can-of-books-backend](https://github.com/marcusbynoe/can-of-books-backend)
 
 ## What can books do?
 
-Bo
+Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
 
 ## Use this template
 
@@ -80,3 +45,58 @@ Clone this repo to your own account with the green "Use this template" button. T
 - What will your team do if one person is taking over the project and not letting the other member contribute?: Discuss how we can incorporate both ideas
 
 - How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?: Open communication throughout the project.
+
+# Project Name
+
+**Author**: Jeremy Cleland & Marcus Bynoe
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+
+## Overview
+
+<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+
+## Getting Started
+
+<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+## Architecture
+
+<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+## Change Log
+
+<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+
+01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+
+## Estimates
+
+<!-- See below -->
+
+## Credit and Collaborations
+
+<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+## Lab 11
+
+Name of feature: Storage and Book Component
+
+Estimate of time needed to complete: 2 and half hours
+
+Start time: 3pm (MST)
+
+Finish time: 5:48pm (MST)
+
+Actual time needed to complete: 2 hours and 48 minutes
+
+## Lab 12
+
+Name of feature: POST and DELETE
+
+Estimate of time needed to complete: 2 and half hours
+
+Start time: 3:30pm (MST)
+
+Finish time: 8:04 (MST)
+
+Actual time needed to complete: About 3 hours and 40-ish mins
