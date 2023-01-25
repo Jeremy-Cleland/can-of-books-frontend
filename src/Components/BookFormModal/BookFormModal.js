@@ -1,6 +1,6 @@
 import React from "react";
 import "./BookFormModal.css";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Form } from "react-bootstrap";
 
 class BookFormModal extends React.Component {
   render() {
@@ -14,20 +14,46 @@ class BookFormModal extends React.Component {
         <Modal.Header closeButton style={{ color: "black" }}>
           New Book
         </Modal.Header>
-        <form onSubmit={this.props.handleNewBook}>
-          <label htmlFor='title'>Title</label>
-          <input type='text' placeholder='Title' name='title' id='title' />
-          <label htmlFor='description'>Description</label>
-          <input
-            type='text'
-            placeholder='Description'
-            name='description'
-            id='description'
-          />
-          <label htmlFor='status'>Status</label>
-          <input type='text' placeholder='Status' name='status' id='status' />
-          <Button onClick={this.props.closeModal}>Add new</Button>
-        </form>
+        <Modal.Body>
+          <Form onSubmit={this.props.handleNewBook}>
+            <Form.Group className='mb-3' controlId='title'>
+              <Form.Label>Title</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Title'
+                name='title'
+                id='title'
+              />
+            </Form.Group>
+
+            <Form.Group className='mb-3' controlId='description'>
+              <Form.Label>Description</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Description'
+                name='description'
+                id='description'
+              />
+            </Form.Group>
+            <Form.Group className='mb-3' controlId='status'>
+              <Form.Label>Status</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Status'
+                name='status'
+                id='status'
+              />
+            </Form.Group>
+            <Button variant='primary' type='submit'>
+              Add this Book
+            </Button>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant='secondary' onClick={this.props.closeModal}>
+            Close
+          </Button>
+        </Modal.Footer>
       </Modal>
     );
   }
