@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Carousel, Button } from "react-bootstrap";
+import { Carousel, Button, Container, Row } from "react-bootstrap";
 import AddBookForm from "../AddBookForm/AddBookForm";
 
 class BestBooks extends React.Component {
@@ -85,22 +85,28 @@ class BestBooks extends React.Component {
                       <h3>{book.title}</h3>
                       <p>{book.description}</p>
                       <p>{book.status}</p>
-                      <Button
-                        onClick={() => {
-                          this.deleteBook(book._id);
-                        }}
-                        variant='danger'
-                      >
-                        Delete
-                      </Button>
-                      <Button
-                        onClick={() => {
-                          this.deleteBook(book._id);
-                        }}
-                        variant='danger'
-                      >
-                        Delete
-                      </Button>
+                      <Container>
+                        <Row>
+                          <Button
+                            onClick={() => {
+                              this.deleteBook(book._id);
+                            }}
+                            variant='danger'
+                          >
+                            Delete
+                          </Button>
+                        </Row>
+                        <Row>
+                          <Button
+                            onClick={() => {
+                              this.deleteBook(book._id);
+                            }}
+                            variant='danger'
+                          >
+                            Delete
+                          </Button>
+                        </Row>
+                      </Container>
                     </Carousel.Caption>
                   </Carousel.Item>
                 );
