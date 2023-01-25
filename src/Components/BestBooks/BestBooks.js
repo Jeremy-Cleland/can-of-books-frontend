@@ -29,7 +29,7 @@ class BestBooks extends React.Component {
       description: event.target.description.value,
       status: event.target.status.value,
     };
-    this.handleCloseModal();
+    this.closeModal();
     console.log("New Book Submitted from Book Form Modal", newBook);
     this.postBooks(newBook);
   };
@@ -109,6 +109,7 @@ class BestBooks extends React.Component {
               openModal={this.openModal}
               handleNewBook={this.handleNewBook}
               onHide={this.closeModal}
+              isOpen={this.state.isOpen}
             />
           </div>
         ) : (
