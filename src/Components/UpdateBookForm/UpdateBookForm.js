@@ -32,7 +32,7 @@ class UpdateBookForm extends React.Component {
                 />
               </Form.Group>
               <Form.Group controlId='Status'>
-                <Form.Check
+                <Form.Control
                   type='text'
                   label='status'
                   defaultValue={this.props.bookDatabase.status}
