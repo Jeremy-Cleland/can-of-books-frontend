@@ -37,7 +37,12 @@ class AddBookForm extends React.Component {
             </Form.Group>
             <Form.Group className='mb-3' controlId='status'>
               <Form.Label>Status</Form.Label>
-              <Form.Control type='checkbox' name='status' id='status' />
+              <Form.Control
+                type='text'
+                placeholder='Status'
+                name='status'
+                id='status'
+              />
             </Form.Group>
             <Button variant='primary' type='submit'>
               Add this Book
