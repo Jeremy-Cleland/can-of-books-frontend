@@ -35,7 +35,7 @@ class UpdateBookForm extends React.Component {
                 <Form.Check
                   type='text'
                   label='status'
-                  defaultChecked={this.props.bookDatabase.status}
+                  defaultValue={this.props.bookDatabase.status}
                 />
               </Form.Group>
               <Button variant='primary' type='submit'>
