@@ -2,3 +2,7 @@
   background: rgba(0, 0, 0, 0.35);
   color: #fff;
 }
+
+.font-link {
+  font-family: "Source Sans Pro", sans-serif;
+}

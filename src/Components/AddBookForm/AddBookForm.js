@@ -11,7 +11,11 @@ class AddBookForm extends React.Component {
         show={this.props.isOpen}
         onHide={this.props.onHide}
       >
-        <Modal.Header closeButton style={{ color: "black" }}>
+        <Modal.Header
+          className='font-link'
+          closeButton
+          style={{ color: "black" }}
+        >
           New Book
         </Modal.Header>
         <Modal.Body>

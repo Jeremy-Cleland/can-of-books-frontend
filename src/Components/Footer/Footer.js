@@ -5,7 +5,10 @@ class Footer extends React.Component {
   render() {
     return (
       <Navbar collapseOnSelect fixed='bottom' bg='dark' variant='dark'>
-        <Navbar.Brand>Code Fellows</Navbar.Brand>-
+        <Navbar.Brand className='font-link' style={{ textAlign: "center" }}>
+          Code Fellows
+        </Navbar.Brand>
+        -
       </Navbar>
     );
   }

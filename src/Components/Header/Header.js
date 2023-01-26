@@ -14,13 +14,17 @@ class Header extends React.Component {
         variant='dark'
       >
         <Container>
-          <Navbar.Brand>My Favorite Books</Navbar.Brand>
+          <Navbar.Brand className='font-link'>My Favorite Books</Navbar.Brand>
           <Nav className='me-auto'>
             <Container>
-              <Link to='/'>Home</Link>
+              <Link className='font-link' to='/'>
+                Home
+              </Link>
             </Container>
             <Container>
-              <Link to='/about'>About</Link>
+              <Link className='font-link' to='/about'>
+                About
+              </Link>
             </Container>
           </Nav>
         </Container>
