@@ -105,7 +105,7 @@ class BestBooks extends React.Component {
 
         {this.state.books.length ? (
           <div>
-            <Carousel className='carousel' variant='dark'>
+            <Carousel className='carousel'>
               {this.state.books.map((book) => {
                 return (
                   <Carousel.Item>
@@ -124,7 +124,7 @@ class BestBooks extends React.Component {
                             onClick={() => {
                               this.deleteBook(book._id);
                             }}
-                            variant='outline-dark'
+                            variant='dark'
                           >
                             Delete
                           </Button>{" "}
@@ -132,7 +132,7 @@ class BestBooks extends React.Component {
                             onClick={() => {
                               this.openUpdateModal(book);
                             }}
-                            variant='outline-dark'
+                            variant='dark'
                           >
                             Update
                           </Button>
