@@ -1,6 +1,7 @@
 import React from "react";
 import "./BestBooks.css";
 import axios from "axios";
+
 import {
   Carousel,
   Button,
@@ -120,7 +121,7 @@ class BestBooks extends React.Component {
                     <Image
                       fluid
                       className='d-block w-100'
-                      src={"https://loremflickr.com/1280/700/nature"}
+                      src={"./images/book.png"}
                       alt={book.title}
                     />
                     <Carousel.Caption>
