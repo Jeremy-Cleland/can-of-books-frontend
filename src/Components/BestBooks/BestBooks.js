@@ -1,7 +1,13 @@
 import React from "react";
 import "./BestBooks.css";
 import axios from "axios";
-import { Carousel, Button, Container, ButtonGroup } from "react-bootstrap";
+import {
+  Carousel,
+  Button,
+  Container,
+  ButtonGroup,
+  Image,
+} from "react-bootstrap";
 import AddBookForm from "../AddBookForm/AddBookForm";
 import UpdateBookForm from "../UpdateBookForm/UpdateBookForm";
 
@@ -109,7 +115,8 @@ class BestBooks extends React.Component {
               {this.state.books.map((book) => {
                 return (
                   <Carousel.Item>
-                    <img
+                    <Image
+                      fluid
                       className='d-block w-100'
                       src={"https://loremflickr.com/1280/700/nature"}
                       alt={book.title}
@@ -148,7 +155,7 @@ class BestBooks extends React.Component {
             <Button
               onClick={this.openAddModal}
               className='my-4'
-              variant='outline-info'
+              variant='outline-light'
             >
               Add New Book
             </Button>
