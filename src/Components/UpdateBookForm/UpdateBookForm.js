@@ -21,21 +21,21 @@ class UpdateBookForm extends React.Component {
                 <Form.Label>Title</Form.Label>
                 <Form.Control
                   type='text'
-                  // defaultValue={this.props.book.title}
+                  defaultValue={this.props.book.title}
                 />
               </Form.Group>
               <Form.Group controlId='description'>
                 <Form.Label>Description</Form.Label>
                 <Form.Control
                   type='text'
-                  // defaultValue={this.props.book.description}
+                  defaultValue={this.props.book.description}
                 />
               </Form.Group>
               <Form.Group controlId='Status'>
                 <Form.Check
                   type='checkbox'
                   label='status'
-                  // defaultChecked={this.props.book.status}
+                  defaultChecked={this.props.book.status}
                 />
               </Form.Group>
               <Button variant='primary' type='submit'>
