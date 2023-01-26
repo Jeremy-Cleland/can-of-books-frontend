@@ -54,10 +54,8 @@ class BestBooks extends React.Component {
       let url = `${process.env.REACT_APP_SERVER}/books/${toUpdateBook._id}`;
       let updatedBook = await axios.put(url, toUpdateBook);
       let books = [...this.state.books];
-      let updatedBookList = books.map(
-        ((prevBook) => prevBook._id) === updatedBook.data._id
-          ? updatedBook.data
-          : prevBook
+      let updatedBookList = books.map((prevBook) =>
+        prevBook._id === updatedBook.data._id ? updatedBook.data : prevBook
       );
       this.setState({ books: updatedBookList, isEditing: false });
     } catch (error) {
