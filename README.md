@@ -100,3 +100,15 @@ Start time: 3:30pm (MST)
 Finish time: 8:04 (MST)
 
 Actual time needed to complete: About 3 hours and 40-ish mins
+
+## Lab 13
+
+Name of feature: ******\*\*******Update a Resource******\*\*******
+
+Estimate of time needed to complete: **4hrs**
+
+Start time: 5 pm\*\*
+
+Finish time: 9 pm\*\*
+
+Actual time needed to complete: **3 hours\_**
