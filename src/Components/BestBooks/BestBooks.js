@@ -158,7 +158,7 @@ class BestBooks extends React.Component {
             />
             <UpdateBookForm
               openUpdateModal={this.openUpdateModal}
-              bookDat={this.state.bookDatabase}
+              bookDatabase={this.state.bookDatabase}
               isEditing={this.state.isEditing}
               closeModal={this.closeModal}
             />
