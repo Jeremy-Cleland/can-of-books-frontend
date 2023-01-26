@@ -50,7 +50,7 @@ class AddBookForm extends React.Component {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant='secondary' onClick={this.props.closeModal}>
+          <Button variant='outline-light' onClick={this.props.closeModal}>
             Close
           </Button>
         </Modal.Footer>
