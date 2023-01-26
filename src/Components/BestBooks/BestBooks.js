@@ -130,7 +130,7 @@ class BestBooks extends React.Component {
                           </Button>{" "}
                           <Button
                             onClick={() => {
-                              this.updateBook(book);
+                              this.openUpdateModal(book);
                             }}
                             variant='outline-dark'
                           >
