@@ -107,10 +107,12 @@ class BestBooks extends React.Component {
 
     return (
       <>
-        <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
+        <h2 className='font-link'>
+          My Essential Lifelong Learning &amp; Formation Shelf
+        </h2>
 
         {this.state.books.length ? (
-          <div>
+          <div className='font-link'>
             <Carousel className='carousel'>
               {this.state.books.map((book) => {
                 return (

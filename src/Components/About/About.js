@@ -4,7 +4,7 @@ class Profile extends React.Component {
   render() {
     /* TODO: render information about the developers */
     return (
-      <div>
+      <div className='font-link'>
         <h2>Our Team</h2>
         <p>
           Our team is made up of 2 developers who are passionate about coding
