@@ -1,5 +1,6 @@
 import React from "react";
 import "./BestBooks.css";
+import pic from "./images/book.png";
 import axios from "axios";
 
 import {
@@ -121,7 +122,7 @@ class BestBooks extends React.Component {
                     <Image
                       fluid
                       className='d-block w-100'
-                      src={"./images/book.png"}
+                      src={pic}
                       alt={book.title}
                     />
                     <Carousel.Caption>
