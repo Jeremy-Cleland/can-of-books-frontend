@@ -111,13 +111,15 @@ class BestBooks extends React.Component {
                   <Carousel.Item>
                     <img
                       className='d-block w-100'
-                      src={"https://loremflickr.com/1280/800/nature"}
+                      src={"https://loremflickr.com/1280/700/nature"}
                       alt={book.title}
                     />
                     <Carousel.Caption>
-                      <h3>{book.title}</h3>
-                      <p>{book.description}</p>
-                      <p>{book.status}</p>
+                      <div style={{ color: "white" }}>
+                        <h3>{book.title}</h3>
+                        <p>{book.description}</p>
+                        <p>{book.status}</p>
+                      </div>
                       <Container>
                         <ButtonGroup>
                           <Button
