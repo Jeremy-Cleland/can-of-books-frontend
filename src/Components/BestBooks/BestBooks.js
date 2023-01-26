@@ -124,15 +124,15 @@ class BestBooks extends React.Component {
                             onClick={() => {
                               this.deleteBook(book._id);
                             }}
-                            variant='danger'
+                            variant='outline-dark'
                           >
                             Delete
                           </Button>{" "}
                           <Button
                             onClick={() => {
-                              this.this.updateBook(book);
+                              this.updateBook(book);
                             }}
-                            variant='warning'
+                            variant='outline-dark'
                           >
                             Update
                           </Button>
